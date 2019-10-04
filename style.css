@@ -1,0 +1,113 @@
+@font-face {
+    font-family: YSDisplayRegular;
+    src: url("fonts/YandexSansDisplay-Regular.ttf");
+}
+
+body {
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'YSDisplayRegular', arial, sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+li {
+    display: flex;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+li::before {
+    line-height: 16px;
+    font-size: 8px;
+    content: '\25cf';
+    padding-right: 5px;
+}
+
+.header {
+    margin: 36px 0;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.course {
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.course-blocks {
+    flex: 0 1 auto;
+    margin-right: 30px;
+}
+
+.course-info {
+    flex: 0 1 240px;
+}
+
+.footer {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        min-width: 320px;
+        box-shadow: none;
+    }
+
+    .main {
+        padding: 24px 24px 36px 24px;
+    }
+
+    .header {
+        font-size: 48px;
+    }
+
+    .description {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .figures {
+        width: 100%;
+    }
+
+    .course {
+        display: block;
+    }
+
+    .course-info {
+        margin-top: 24px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        width: 716px;
+        box-shadow: 0 0 10px;
+    }
+
+    .main {
+        padding: 48px;
+    }
+
+    .header {
+        font-size: 64px;
+    }
+
+    .description {
+        font-size: 36px;
+    }
+
+    .course {
+        display: flex;
+    }
+}
